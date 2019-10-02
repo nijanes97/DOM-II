@@ -54,19 +54,19 @@ navEfect.forEach(function(element) {
 })
 const txtP = document.querySelectorAll("p");
 txtP.forEach(function(element){
-  element.addEventListener("keydown", () =>{
+  element.addEventListener("contextmenu", () =>{
     element.style.transform = "scale(1.5)";
     element.style.transition = "all 0.3s";
   })
-  element.addEventListener("keyup", () =>{
+  element.addEventListener("auxclick", () =>{
     element.style.transform = "none";
     element.style.transition = "all 0.3s";
   })
 })
 
 const logo = document.querySelector(".logo-heading");
-logo.addEventListener("keypress", () => {
-  element.backgroundColor = randColor();
+logo.addEventListener("mousemove", () => {
+  logo.style.backgroundColor = randColor();
 })
 
 navEfect.forEach(function(element) {
